@@ -34,6 +34,7 @@ dd {
 
 img {
   max-width: 100%;
+  object-fit: cover;
 }
 
 button {
@@ -49,6 +50,38 @@ input,
 textarea,
 select {
   font: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #333333;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+button,
+input,
+textarea {
+  outline: transparent;
+}
+
+.section {
+  padding: 140px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .animation {
@@ -158,38 +191,6 @@ select {
 
 .mixitup-control-active {
   color: #2352DE;
-}
-
-.section {
-  padding: 140px 0;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  color: #333333;
-  background-color: #ffffff;
-  min-height: 100vh;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a,
-button,
-input,
-textarea {
-  outline: transparent;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .title {
