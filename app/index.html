@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Frontend-разработчик</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap"
+    rel="stylesheet">
+    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+  <body id="body">
+    <div class="header__top">
+      <div class="container">
+        <nav class="menu">
+          <a class="logo" href="#body">
+            <img class="logo" src="images/logo.svg" alt="Логотип">
+          </a>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link animation" href="#skills">Навыки</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link animation" href="#portfolio">Портфолио</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link animation" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="header-bg">
+        <video src="video/video-bg.mp4" type="video/mp4" autoplay muted loop></video>
+      </div>
+      <div class="container">
+        <div class="header__content">
+          <h1 class="header__title">
+          Привет, я Иван Ардюк
+          <span class="header__subtitle">начинающий frontend-разработчик</span>
+          </h1>
+          <a class="header__icon animation" href="#portfolio">
+          смотреть работы
+        </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="skills section" id="skills">
+        <div class="container">
+          <h2 class="title">
+          Навыки
+        </h2>
+          <div class="skills__inner">
+            <img class="skills__img" src="images/portrait.jpg" alt="Иван Иванов, фото в резюме">
+            <ul class="skills__info">
+              <li class="skills__item">
+                <span class="skills__text">html</span>
+                <div class="skills__unfill">
+                  <span class="skills__fill" style="width: 85%;"></span>
+                  <span class="sr-only">Уровень владения 85%</span>
+                </div>
+              </li>
+              <li class="skills__item">
+                <span class="skills__text">css</span>
+                <div class="skills__unfill">
+                  <span class="skills__fill" style="width: 80%;"></span>
+                  <span class="sr-only">Уровень владения 80%</span>
+                </div>
+              </li>
+              <li class="skills__item">
+                <span class="skills__text">js</span>
+                <div class="skills__unfill">
+                  <span class="skills__fill" style="width: 60%;"></span>
+                  <span class="sr-only">Уровень владения 60%</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio">
+        <div class="container">
+          <h2 class="title portfolio__title">
+          Мои работы
+        </h2>
+          <div class="portfolio__menu">
+            <ul class="portfolio__list">
+              <li class="portfolio__item">
+                <button class="portfolio__btn" type="button" data-filter="all">Все работы</button>
+              </li>
+
+              <li class="portfolio__item">
+                <button class="portfolio__btn" type="button" data-filter=".category-a">Лендинги</button>
+              </li>
+
+              <li class="portfolio__item">
+                <button class="portfolio__btn" type="button" data-filter=".category-b">Корпоративные</button>
+              </li>
+
+              <li class="portfolio__item">
+                <button class="portfolio__btn" type="button" data-filter=".category-c">E-commerce</button>
+              </li>
+            </ul>
+          </div>
+          <ul class="portfolio__content">
+            <li class="portfolio__items mix category-a">
+              <a href="#">
+                <img src="images/portfolio/1.jpg" alt="Портфолио 1">
+              </a>
+            </li>
+
+            <li class="portfolio__items mix category-a">
+              <a href="#">
+                <img src="images/portfolio/2.jpg" alt="Портфолио 2">
+              </a>
+            </li>
+
+            <li class="portfolio__items mix category-b">
+              <a href="#">
+                <img src="images/portfolio/3.jpg" alt="Портфолио 3">
+              </a>
+            </li>
+
+            <li class="portfolio__items mix category-b">
+              <a href="#">
+                <img src="images/portfolio/4.jpg" alt="Портфолио 4">
+              </a>
+            </li>
+
+            <li class="portfolio__items mix category-b">
+              <a href="#">
+                <img src="images/portfolio/5.jpg" alt="Портфолио 5">
+              </a>
+            </li>
+
+            <li class="portfolio__items mix category-c">
+              <a href="#">
+                <img src="images/portfolio/6.jpg" alt="Портфолио 6">
+              </a>
+            </li>
+          </ul>
+          <button class="portfolio__items btn-technical" type="button">Загрузить еще</button>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="title">
+          Контакты
+        </h2>
+          <div class="contacts__inner">
+            <address class="contacts__box">
+              <p>
+              Связаться со мной можно, воспользовавшись контактной формой, или напрямую по номеру телефона, email, в
+              соцсетях:
+            </p>
+
+              <ul class="contacts__list">
+                <li class="contacts__link">
+                  <a class="contacts__link animation" href="tel:380501111111">+375 (44) 553 77 15
+                </a>
+                </li>
+                <li class="contacts__link">
+                  <a class="contacts__link animation"
+                  href="mailto:frontend-monster@email.com">ard.iv@yandex.ru</a>
+                </li>
+              </ul>
+
+              <ul class="contacts-social">
+                <li class="contacts-social__item">
+                  <a class="contacts-social__icon" target="_blank"
+                  style="background-image: url('images/instagram-icon.svg')" href="#"></a>
+                  <span class="sr-only">Мы в Инстаграм</span>
+                </li>
+
+                <li class="contacts-social__item">
+                  <a class="contacts-social__icon" target="_blank"
+                  style="background-image: url('images/facebook-icon.svg')" href="#"></a>
+                  <span class="sr-only">Мы в Фейсбук</span>
+                </li>
+
+                <li class="contacts-social__item">
+                  <a class="contacts-social__icon" target="_blank"
+                  style="background-image: url('images/telegram-icon.svg')" href="#"></a>
+                  <span class="sr-only">Мы в Телеграм</span>
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="logo" href="#body">
+        <img class="logo" src="images/logo.svg" alt="Логотип">
+      </a>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+  </body>
+
+</html>
