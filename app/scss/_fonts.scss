@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Italic.woff2') format('woff2'),
+    url('../fonts/Ubuntu-Italic.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Ubuntu-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Ubuntu-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
