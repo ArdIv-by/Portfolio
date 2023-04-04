@@ -14,7 +14,7 @@ body {
 }
 
 .section {
-  padding: 120px 0;
+  padding: 110px 0;
 }
 
 .sr-only {
@@ -48,14 +48,19 @@ img {
   margin-bottom: 60px;
   position: relative;
   display: inline-block;
+  z-index: 1;
 
   &::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 15px;
-    background-color: rgba(35, 82, 222, 0.1);
+    background-color: rgba(148, 172, 246, 0.5);
     bottom: 4px;
     left: 3px;
   }
+}
+
+.mixitup-control-active {
+  color: #fff;
 }

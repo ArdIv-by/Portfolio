@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио Frontend-разработчик</title>
-    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
@@ -17,7 +17,7 @@
       <div class="container">
         <nav class="menu">
           <a class="logo" href="#body">
-            <img class="logo" src="images/logo.svg" alt="Логотип">
+            <img class="logo" src="images/logo.svg" width="70" alt="Логотип">
           </a>
 
           <ul class="menu__list">
@@ -38,7 +38,7 @@
     <header class="header">
       <div class="container">
         <div class="header__content">
-          <img class="header__img" src="images/151.jpg" width="400" height="400" alt="Иван Иванов, фото в резюме">
+          <img class="header__img" src="images/1665.jpg" width="400" height="400" alt="Иван Иванов, фото в резюме">
           <h1 class="header__title">
           Привет, я Иван Ардюк
           <span class="header__subtitle">начинающий frontend-разработчик</span>
@@ -54,30 +54,25 @@
       <section class="skills section" id="skills">
         <div class="container">
           <h2 class="title">
-          Навыки
+          Технические навыки
         </h2>
           <div class="skills__inner">
             <ul class="skills__info">
               <li class="skills__item">
-                <span class="skills__text">html</span>
-                <div class="skills__unfill">
-                  <span class="skills__fill" style="width: 85%;"></span>
-                  <span class="sr-only">Уровень владения 85%</span>
-                </div>
+                <h3 class="skills__title">Языки и технологии программирования:</h3>
+                <span class="skills__text">JavaScript, HTML, CSS/SCSS, Gulp, Flexbox, Grid Layout</span>
               </li>
               <li class="skills__item">
-                <span class="skills__text">css</span>
-                <div class="skills__unfill">
-                  <span class="skills__fill" style="width: 80%;"></span>
-                  <span class="sr-only">Уровень владения 80%</span>
-                </div>
+                <h3 class="skills__title">Инструменты:</h3>
+                <span class="skills__text">GIT, VS Code, Photoshop, Figma</span>
               </li>
               <li class="skills__item">
-                <span class="skills__text">js</span>
-                <div class="skills__unfill">
-                  <span class="skills__fill" style="width: 60%;"></span>
-                  <span class="sr-only">Уровень владения 60%</span>
-                </div>
+                <h3 class="skills__title">Уровень английского языка:</h3>
+                <span class="skills__text">Elementary (A2)</span>
+              </li>
+              <li class="skills__item">
+                <h3 class="skills__title">Другие навыки:</h3>
+                <span class="skills__text">Адаптивная и кроссбаузерная верстка, БЭМ, PixelPerfect, Solidworks, ProEngineer</span>
               </li>
             </ul>
           </div>
@@ -110,46 +105,51 @@
           </div>
           <ul class="portfolio__content">
             <li class="portfolio__items mix category-a">
-              <a href="#">
-                <img src="images/portfolio/1.jpg" alt="Портфолио 1">
+              <a target="_blank" href="https://ardiv-by.github.io/Safari/">
+                <img src="images/portfolio/1.jpg" width="360" height="360" alt="Портфолио 1">
               </a>
+              <div class="portfolio__box"></div>
             </li>
 
             <li class="portfolio__items mix category-a">
-              <a href="#">
-                <img src="images/portfolio/2.jpg" alt="Портфолио 2">
+              <a target="_blank" href="#">
+                <img src="images/portfolio/2.jpg" width="360" height="360" alt="Портфолио 2">
               </a>
+              <div class="portfolio__box"></div>
             </li>
 
             <li class="portfolio__items mix category-b">
-              <a href="#">
-                <img src="images/portfolio/3.jpg" alt="Портфолио 3">
-              </a>
+              <img class="portfolio__img" src="images/portfolio/3.jpg" width="360" height="360" alt="Портфолио 3">
+
+              <a class="portfolio__link" target="_blank" href="#">Проект</a>
+
             </li>
 
             <li class="portfolio__items mix category-b">
-              <a href="#">
-                <img src="images/portfolio/4.jpg" alt="Портфолио 4">
+              <a target="_blank" href="#">
+                <img src="images/portfolio/4.jpg" width="360" height="360" alt="Портфолио 4">
               </a>
+              <div class="portfolio__box"></div>
             </li>
 
             <li class="portfolio__items mix category-b">
-              <a href="#">
-                <img src="images/portfolio/5.jpg" alt="Портфолио 5">
+              <a target="_blank" href="#">
+                <img src="images/portfolio/5.jpg" width="360" height="360" alt="Портфолио 5">
               </a>
+              <div class="portfolio__box"></div>
             </li>
 
             <li class="portfolio__items mix category-c">
-              <a href="#">
-                <img src="images/portfolio/6.jpg" alt="Портфолио 6">
+              <a target="_blank" href="#">
+                <img src="images/portfolio/6.jpg" width="360" height="360" alt="Портфолио 6">
               </a>
+              <div class="portfolio__box"></div>
             </li>
           </ul>
-          <button class="portfolio__items btn-technical" type="button">Загрузить еще</button>
         </div>
       </section>
 
-      <section class="contacts" id="contacts">
+      <section class="contacts section" id="contacts">
         <div class="container">
           <h2 class="title">
           Контакты
@@ -157,9 +157,9 @@
           <div class="contacts__inner">
             <address class="contacts__box">
               <p>
-              Связаться со мной можно, воспользовавшись контактной формой, или напрямую по номеру телефона, email, в
+              Связаться со мной можно, воспользовавшись контактной информацией или в
               соцсетях:
-            </p>
+              </p>
 
               <ul class="contacts__list">
                 <li class="contacts__link">
@@ -172,25 +172,10 @@
                 </li>
               </ul>
 
-              <ul class="contacts-social">
-                <li class="contacts-social__item">
-                  <a class="contacts-social__icon" target="_blank"
-                  style="background-image: url('images/instagram-icon.svg')" href="#"></a>
-                  <span class="sr-only">Мы в Инстаграм</span>
-                </li>
-
-                <li class="contacts-social__item">
-                  <a class="contacts-social__icon" target="_blank"
-                  style="background-image: url('images/facebook-icon.svg')" href="#"></a>
-                  <span class="sr-only">Мы в Фейсбук</span>
-                </li>
-
-                <li class="contacts-social__item">
-                  <a class="contacts-social__icon" target="_blank"
-                  style="background-image: url('images/telegram-icon.svg')" href="#"></a>
-                  <span class="sr-only">Мы в Телеграм</span>
-                </li>
-              </ul>
+              <div class="contacts-social">
+                <a class="contacts-social__icon" target="_blank" href="https://t.me/Ard_Iv"></a>
+                <span class="sr-only">Я в Телеграм</span>
+              </div>
             </address>
           </div>
         </div>
@@ -199,7 +184,7 @@
 
     <footer class="footer">
       <a class="logo" href="#body">
-        <img class="logo" src="images/logo.svg" alt="Логотип">
+        <img class="logo" src="images/logo.svg" width="70" alt="Логотип">
       </a>
     </footer>
 
