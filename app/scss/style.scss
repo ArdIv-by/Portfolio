@@ -190,40 +190,49 @@
 
   &__items {
     position: relative;
-    transition: box-shadow 0.5s, background-color 0.5s;
-
-    &:before {
-      content: '';
-      position: absolute;
-      background-color: rgba(5, 8, 2, .8);
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      opacity: -1;
-    }
+    width: 550px;
+    height: 250px;
+    transition: box-shadow 0.8s, opacity 0.8s;
 
     &:hover {
-      box-shadow: 0 0 100px -2px rgba(255, 255, 255, 0.81);
+      box-shadow: inset 2px -43px 120px 32px rgba(5, 8, 2, .8);
 
-      .portfolio__items:before {
+      & .portfolio__link {
         opacity: 1;
-        z-index: 10;
       }
 
-      & img {
-        display: block;
-      }
+      box-shadow: 0 0 25px 12px rgba(5, 8, 2, .8);
     }
+  }
+
+  &__items-passive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #776d6d;
+    width: 50%;
+    height: 100%;
+    padding: 20px 20px 20px 0;
+    clip-path: polygon(0 0, 100% 0, 71% 101%, 0% 100%);
   }
 
   &__link {
     position: absolute;
     padding: 10px 20px;
+    border-radius: 20px;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #000;
+    opacity: 0;
+    transition: background-color 0.8s, color 0.8s, opacity 0.8s;
+
+    &:hover {
+      box-shadow: 0 0 10px 0 #3498db inset,
+        0 0 10px 4px #3498db;
+      background-color: #fff;
+      color: #000;
+    }
   }
 
   &__item:not(:last-child) {
@@ -254,7 +263,7 @@
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 45px;
     margin-bottom: 60px;
   }
