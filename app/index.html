@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио Frontend-разработчик</title>
+    <title>Portfolio Frontend-developer</title>
     <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -13,38 +13,36 @@
     <div class="body-bg">
       <video src="video/video-bg.mp4" type="video/mp4" autoplay muted loop></video>
     </div>
-    <div class="header__top">
-      <div class="container">
-        <nav class="menu">
-          <a class="logo" href="#body">
-            <img class="logo" src="images/logo.svg" width="70" alt="Логотип">
-          </a>
-
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link animation" href="#skills">Навыки</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link animation" href="#portfolio">Портфолио</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link animation" href="#contacts">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
 
     <header class="header">
       <div class="container">
+        <div class="header__top anim-items anim-nohide">
+          <nav class="menu">
+            <a class="logo" href="#body">
+              <img class="logo" src="images/logo.svg" width="50" alt="Логотип">
+            </a>
+
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link animation" href="#skills">Skills</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link animation" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link animation" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <div class="header__content">
-          <img class="header__img" src="images/1665.jpg" width="400" height="400" alt="Иван Иванов, фото в резюме">
-          <h1 class="header__title">
-          Привет, я Иван Ардюк
-          <span class="header__subtitle">начинающий frontend-разработчик</span>
+          <img class="header__img anim-items anim-nohide" src="images/1665.jpg" width="400" height="400" alt="Иван Иванов, фото в резюме">
+          <h1 class="header__title anim-items anim-nohide">
+          Hello, I'm Ivan Ardyuk
+          <span class="header__subtitle">beginning frontend-developer</span>
           </h1>
-          <a class="header__icon animation" href="#portfolio">
-          смотреть работы
+          <a class="header__icon anim-items anim-nohide animation " href="#portfolio">
+          See works
         </a>
         </div>
       </div>
@@ -54,44 +52,42 @@
       <section class="skills section" id="skills">
         <div class="container">
           <h2 class="title">
-          Технические навыки
-        </h2>
-          <div class="skills__inner">
-            <ul class="skills__info">
-              <li class="skills__item">
-                <h3 class="skills__title">Языки и технологии программирования:</h3>
-                <span class="skills__text">JavaScript, HTML, CSS/SCSS, Gulp, Flexbox, Grid Layout</span>
-              </li>
-              <li class="skills__item">
-                <h3 class="skills__title">Инструменты:</h3>
-                <span class="skills__text">GIT, VS Code, Photoshop, Figma</span>
-              </li>
-              <li class="skills__item">
-                <h3 class="skills__title">Уровень английского языка:</h3>
-                <span class="skills__text">Elementary (A2)</span>
-              </li>
-              <li class="skills__item">
-                <h3 class="skills__title">Другие навыки:</h3>
-                <span class="skills__text">Адаптивная и кроссбаузерная верстка, БЭМ, PixelPerfect, Solidworks, ProEngineer</span>
-              </li>
-            </ul>
-          </div>
+          Technical skills
+          </h2>
+          <ul class="skills__info">
+            <li class="skills__item">
+              <h3 class="skills__title">Programming languages ​​and technologies:</h3>
+              <span class="skills__text">JavaScript, HTML, CSS/SCSS, Gulp, Flexbox, Grid Layout</span>
+            </li>
+            <li class="skills__item">
+              <h3 class="skills__title">Tools:</h3>
+              <span class="skills__text">GIT, VS Code, Photoshop, Figma</span>
+            </li>
+            <li class="skills__item">
+              <h3 class="skills__title">English level:</h3>
+              <span class="skills__text">Elementary (A2)</span>
+            </li>
+            <li class="skills__item">
+              <h3 class="skills__title">Another skills:</h3>
+              <span class="skills__text">Responsive, semantic and crossbow layout, BEM, PixelPerfect, Solidworks, ProEngineer</span>
+            </li>
+          </ul>
         </div>
       </section>
 
       <section class="portfolio section" id="portfolio">
         <div class="container">
           <h2 class="title portfolio__title">
-          Мои работы
+          My works
         </h2>
           <div class="portfolio__menu">
             <ul class="portfolio__list">
               <li class="portfolio__item">
-                <button class="portfolio__btn" type="button" data-filter="all">Все работы</button>
+                <button class="portfolio__btn" type="button" data-filter="all">All</button>
               </li>
 
               <li class="portfolio__item">
-                <button class="portfolio__btn" type="button" data-filter=".category-a">Лендинги</button>
+                <button class="portfolio__btn" type="button" data-filter=".category-a">Landings</button>
               </li>
 
               <li class="portfolio__item">
@@ -104,85 +100,101 @@
             </ul>
           </div>
           <ul class="portfolio__content">
-            <li class="portfolio__items mix category-a">
-              <img src="images/portfolio/1.jpg" width="550" height="250" alt="Портфолио 1">
-              <a class="portfolio__link" target="_blank" href="https://ardiv-by.github.io/Safari/">Проект</a>
-              <div class="portfolio__items-passive">
-                <h3 class="portfolio__items-title">Safari</h3>
-                <p class="portfolio__items-text">sgsfghsgsdfv</p>
+            <li class="portfolio__items mix category-a anim-items">
+              <div class="anim-show">
+                <img src="images/portfolio/1.jpg" width="550" height="250" alt="Портфолио 1">
+                <a class="portfolio__link" target="_blank" href="https://ardiv-by.github.io/Safari/">Project</a>
+                <div class="portfolio__items-passive">
+                  <h3 class="portfolio__items-title">Safari</h3>
+                  <p class="portfolio__items-text">Responsive layout, BEM</p>
+                </div>
               </div>
             </li>
 
-            <li class="portfolio__items mix category-a">
-              <img src="images/portfolio/2.jpg" width="550" height="250" alt="Портфолио 2">
-              <a class="portfolio__link" target="_blank" href="https://ardiv-by.github.io/Xiaomi-Himo/">Проект</a>
-              <div class="portfolio__items-passive">
-                <h3 class="portfolio__items-title">Xiaomi Himo</h3>
-                <p class="portfolio__items-text">sgsfghsgsdfv</p>
+            <li class="portfolio__items mix category-a anim-items">
+              <div class="anim-show">
+                <img src="images/portfolio/2.jpg" width="550" height="250" alt="Портфолио 2">
+                <a class="portfolio__link" target="_blank" href="https://ardiv-by.github.io/Xiaomi-Himo/">Project</a>
+                <div class="portfolio__items-passive">
+                  <h3 class="portfolio__items-title">Xiaomi Himo</h3>
+                  <p class="portfolio__items-text">Responsive layout, BEM</p>
+                </div>
               </div>
             </li>
 
-            <li class="portfolio__items mix category-a">
-              <img class="portfolio__img" src="images/portfolio/3.jpg" width="550" height="250" alt="Портфолио 3">
-              <a class="portfolio__link" target="_blank" href="https://ardiv-by.github.io/Tesla/">Проект</a>
-              <div class="portfolio__items-passive">
-                <h3 class="portfolio__items-title">Tesla</h3>
-                <p class="portfolio__items-text">sgsfghsgsdfv</p>
+            <li class="portfolio__items mix category-a anim-items">
+              <div class="anim-show">
+                <img class="portfolio__img" src="images/portfolio/3.jpg" width="550" height="250" alt="Портфолио 3">
+                <a class="portfolio__link" target="_blank" href="https://ardiv-by.github.io/Tesla/">Project</a>
+                <div class="portfolio__items-passive">
+                  <h3 class="portfolio__items-title">Tesla</h3>
+                  <p class="portfolio__items-text">Responsive layout, BEM</p>
+                </div>
               </div>
             </li>
 
-            <li class="portfolio__items mix category-b">
-              <img src="images/portfolio/4.jpg" width="550" height="250" alt="Портфолио 4">
-              <a class="portfolio__link" target="_blank" href="https://ardiv-by.github.io/DarkLightMode/">Проект</a>
-              <div class="portfolio__items-passive">
-                <h3 class="portfolio__items-title">Dark/Light Mode</h3>
-                <p class="portfolio__items-text">sgsfghsgsdfv</p>
+            <li class="portfolio__items mix category-b anim-items">
+              <div class="anim-show">
+                <img src="images/portfolio/4.jpg" width="550" height="250" alt="Портфолио 4">
+                <a class="portfolio__link" target="_blank" href="https://ardiv-by.github.io/DarkLightMode/">Project</a>
+                <div class="portfolio__items-passive">
+                  <h3 class="portfolio__items-title">Dark/Light Mode</h3>
+                  <p class="portfolio__items-text">Working with css variables, js components</p>
+                </div>
               </div>
             </li>
 
-            <li class="portfolio__items mix category-b">
-              <img src="images/portfolio/5.jpg" width="550" height="250" alt="Портфолио 5">
-              <a class="portfolio__link" target="_blank" href="https://ardiv-by.github.io/DigitalClock/">Проект</a>
-              <div class="portfolio__items-passive">
-                <h3 class="portfolio__items-title">Digital Clock</h3>
-                <p class="portfolio__items-text">sgsfghsgsdfv</p>
+            <li class="portfolio__items mix category-b anim-items">
+              <div class="anim-show">
+                <img src="images/portfolio/5.jpg" width="550" height="250" alt="Портфолио 5">
+                <a class="portfolio__link" target="_blank" href="https://ardiv-by.github.io/DigitalClock/">Project</a>
+                <div class="portfolio__items-passive">
+                  <h3 class="portfolio__items-title">Digital Clock</h3>
+                  <p class="portfolio__items-text">Data attributes, js components</p>
+                </div>
               </div>
             </li>
 
-            <li class="portfolio__items mix category-c">
-              <img src="images/portfolio/6.jpg" width="550" height="250" alt="Портфолио 6">
-              <ul class="portfolio__items-list">
-                <li>
-                  <a class="portfolio__items-link" target="_blank" href="https://ardiv-by.github.io/SimpleFood/index.html">Главная страница</a>
-                </li>
-                <li>
-                  <a class="portfolio__items-link" target="_blank" href="https://ardiv-by.github.io/SimpleFood/catalog.html">Страница каталога</a>
-                </li>
-                <li>
-                  <a class="portfolio__items-link" target="_blank" href="https://ardiv-by.github.io/SimpleFood/product.html">Страница продукта</a>
-                </li>
-              </ul>
-              <div class="portfolio__items-passive">
-                <h3 class="portfolio__items-title">Simple Food</h3>
-                <p class="portfolio__items-text">sgsfghsgsdfv</p>
+            <li class="portfolio__items mix category-c anim-items">
+              <div class="anim-show">
+                <img src="images/portfolio/6.jpg" width="550" height="250" alt="Портфолио 6">
+                <ul class="portfolio__items-list">
+                  <li>
+                    <a class="portfolio__items-link" target="_blank" href="https://ardiv-by.github.io/SimpleFood/index.html">Home page</a>
+                  </li>
+                  <li>
+                    <a class="portfolio__items-link" target="_blank" href="https://ardiv-by.github.io/SimpleFood/catalog.html">Catalog page</a>
+                  </li>
+                  <li>
+                    <a class="portfolio__items-link" target="_blank" href="https://ardiv-by.github.io/SimpleFood/product.html">Product page</a>
+                  </li>
+                </ul>
+                <div class="portfolio__items-passive">
+                  <h3 class="portfolio__items-title">Simple Food</h3>
+                  <p class="portfolio__items-text">Responsive layout, BEM, js components, PixelPerfect, Scss, Gulp, Flexbox, Grid Layout</p>
+                </div>
               </div>
             </li>
 
-            <li class="portfolio__items mix category-b">
-              <img src="images/portfolio/7.jpg" width="550" height="250" alt="Портфолио 7">
-              <a class="portfolio__link" target="_blank" href="https://ardiv-by.github.io/Calculator/">Проект</a>
-              <div class="portfolio__items-passive">
-                <h3 class="portfolio__items-title">JS Calculator</h3>
-                <p class="portfolio__items-text">fsfbsfbcv</p>
+            <li class="portfolio__items mix category-b anim-items">
+              <div class="anim-show">
+                <img src="images/portfolio/7.jpg" width="550" height="250" alt="Портфолио 7">
+                <a class="portfolio__link" target="_blank" href="https://ardiv-by.github.io/Calculator/">Project</a>
+                <div class="portfolio__items-passive">
+                  <h3 class="portfolio__items-title">JS Calculator</h3>
+                  <p class="portfolio__items-text">Data attributes, js components</p>
+                </div>
               </div>
             </li>
 
-            <li class="portfolio__items mix category-b">
-              <img src="images/portfolio/8.jpg" width="550" height="250" alt="Портфолио 8">
-              <a class="portfolio__link" target="_blank" href="https://ardiv-by.github.io/TicTacToe/">Проект</a>
-              <div class="portfolio__items-passive">
-                <h3 class="portfolio__items-title">Tic Tac Toe</h3>
-                <p class="portfolio__items-text">fsfbsfbcv</p>
+            <li class="portfolio__items mix category-b anim-items">
+              <div class="anim-show">
+                <img src="images/portfolio/8.jpg" width="550" height="250" alt="Портфолио 8">
+                <a class="portfolio__link" target="_blank" href="https://ardiv-by.github.io/TicTacToe/">Project</a>
+                <div class="portfolio__items-passive">
+                  <h3 class="portfolio__items-title">Tic Tac Toe</h3>
+                  <p class="portfolio__items-text">Data attributes, js components</p>
+                </div>
               </div>
             </li>
           </ul>
@@ -192,21 +204,27 @@
       <section class="contacts section" id="contacts">
         <div class="container">
           <h2 class="title">
-          Контакты
+          Contacts
         </h2>
           <div class="contacts__inner">
             <address class="contacts__box">
               <p>
-              Связаться со мной можно, воспользовавшись контактной информацией или в
-              соцсетях:
+              You can contact me using the contact information or in
+              social networks:
               </p>
 
               <ul class="contacts__list">
                 <li class="contacts__link">
+                  Github:
+                  <a class="contacts__link animation" target="_blanck" href="https://github.com/ArdIv-by">https://github.com/ArdIv-by</a>
+                </li>
+                <li class="contacts__link">
+                  Phone: 
                   <a class="contacts__link animation" href="tel:380501111111">+375 (44) 553 77 15
                 </a>
                 </li>
                 <li class="contacts__link">
+                  E-mail: 
                   <a class="contacts__link animation"
                   href="mailto:frontend-monster@email.com">ard.iv@yandex.ru</a>
                 </li>
@@ -214,7 +232,7 @@
 
               <div class="contacts-social">
                 <a class="contacts-social__icon" target="_blank" href="https://t.me/Ard_Iv"></a>
-                <span class="sr-only">Я в Телеграм</span>
+                <span class="sr-only">I'm in Telegram</span>
               </div>
             </address>
           </div>
@@ -223,8 +241,9 @@
     </main>
 
     <footer class="footer">
+      <h3 class="footer__title">WORK IS GOING ON TO IMPROVE THE FUNCTIONALITY AND EXPAND THE PROJECT SHEET</h3>
       <a class="logo" href="#body">
-        <img class="logo" src="images/logo.svg" width="70" alt="Логотип">
+        <img class="logo" src="images/logo.svg" width="50" alt="Логотип">
       </a>
     </footer>
 

@@ -5,16 +5,45 @@ body {
 }
 
 body {
-  @extend %ubuntu-400;
+  @extend %poppins-400;
   font-size: 16px;
   line-height: 1.6;
   color: #fff;
-  min-height: 100vh;
- 
+}
+
+.body-bg {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+
+  & video {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  &::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+  }
 }
 
 .section {
-  padding: 110px 0;
+  padding: 30px 0;
 }
 
 .sr-only {
@@ -42,13 +71,13 @@ img {
 }
 
 .title {
-  font-weight: 700;
+  @extend %poppins-700;
   font-size: 48px;
   line-height: 1.3;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   position: relative;
   display: inline-block;
-  z-index: 1;
+
 
   &::after {
     content: '';
@@ -63,4 +92,36 @@ img {
 
 .mixitup-control-active {
   color: #fff;
+}
+
+.animation {
+  font-size: 18px;
+  line-height: 1.3;
+  border-radius: 3px;
+  text-decoration: underline transparent;
+  transition: text-decoration 0.5s, opacity 0.5s, box-shadow 0.5s, background-color 0.5s, color 0.5s;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.anim-show {
+  transform: translate(0px, 100%);
+  opacity: 0;
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+.anim-show.active,
+.active .anim-show {
+  opacity: 1;
+  transform: translate(0px, 0px);
 }
